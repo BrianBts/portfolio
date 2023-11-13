@@ -91,6 +91,10 @@ const dataSkills = [
     {
       name: "Trello",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain.svg",
+    },
+    {
+      name: "Docker",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg",
     }
   ];
   
