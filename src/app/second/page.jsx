@@ -2,14 +2,15 @@ import React from "react";
 import bigLogo from "/public/encabezado-tipografico.png";
 import Image from "next/image";
 import Navbar from "../components/page";
-import About from "../components/About"; 
+import About from "../components/About";
 import Skills from "../components/Skills";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 const Page = () => {
   return (
-    ///////// 1er 
     <div className="relative bg-backgroundColor ">
-      <Navbar/>
+      <Navbar />
       <div className="flex items-center justify-center pt-[50%] sm:pt-28 ">
         <div className="text-center h-[80vh]">
           <Image
@@ -24,11 +25,10 @@ const Page = () => {
           </div>
         </div>
       </div>
-      ///////// 2do 
-      <About/>
-      ///////// 3do
-       <Skills/>
-
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </div>
   );
 };
