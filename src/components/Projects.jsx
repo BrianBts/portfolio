@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import projectsDetails from "../utils/projectsDetails";
-import CardProjects from "../common/CardProjects";
+import CardProjects from "../common/cardProjects";
 import { motion } from "framer-motion";
 
 const Projects = () => {
