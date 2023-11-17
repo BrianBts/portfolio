@@ -6,7 +6,7 @@ import { Github, Behance, Linkedin, Instagram } from "../common/icons";
 const About = () => {
   return (
     <div  className="w-full px-2 flex items-center py-16 md:py-24 bg-backGrey">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-16">
+      <div className="max-w-[1240px] px-5 m-auto md:grid grid-cols-3 gap-16">
         <div
           data-aos="zoom-in"
           className="flex flex-col justify-center col-span-2"
