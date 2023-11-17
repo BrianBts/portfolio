@@ -1,6 +1,6 @@
-import logoMobx from "../../../public/mobx.png";
-import logoLightroom from "../../../public/Adobe-Lightroom.png";
-import mongoose from "../../../public/mongoose.png"
+import logoMobx from "../../public/mobx.png";
+import logoLightroom from "../../public/Adobe-Lightroom.png";
+import mongoose from "../../public/mongoose.png"
 
 const dataSkills = [
     {
