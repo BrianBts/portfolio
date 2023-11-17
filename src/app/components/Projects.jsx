@@ -2,8 +2,7 @@
 import React from "react";
 import projectsDetails from "../utils/projectsDetails";
 import CardProjects from "../common/CardProjects";
-
-
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -14,14 +13,23 @@ const Projects = () => {
         </p>
         <div className="grid m-2 grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-3 overflow-x-auto">
           {projectsDetails.map((project, index) => (
-            <div key={index} className="mb-8">
+            <motion.div
+              key={index}
+              className="mb-8"
+              initial={{ opacity: 0, scale: 0.5 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01],
+              }}
+            >
               <CardProjects
-                key={index}
-                title={project.title} 
+                title={project.title}
                 image={project.image}
                 description={project.description}
               />
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

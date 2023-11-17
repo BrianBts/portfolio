@@ -8,20 +8,18 @@ const projectsDetails = [
   {
     title: "Proyecto 2",
     description: "Descripción del Proyecto 2.",
-    image: "/firstplug.jpeg", 
+    image: "/box.jpg", 
   },
   {
-    title: "Proyecto 3",
+    title: "Proyecto 2",
     description: "Descripción del Proyecto 2.",
-    image: "/firstplug.jpeg", 
+    image: "/tmdb.jpg", 
   },
   {
-    title: "Proyecto 4",
-    description: "Descripción del Proyecto 1.",
-    image: "/firstplug.jpeg", 
+    title: "Proyecto 2",
+    description: "Descripción del Proyecto 2.",
+    image: "/behance.jpg", 
   },
-
-
 
 ];
 
