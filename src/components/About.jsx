@@ -2,8 +2,12 @@ import Image from "next/image";
 import React from "react";
 import imagePerfil from "/public/foto-Perfil.png";
 import { Github, Behance, Linkedin, Instagram } from "../common/icons";
+import Button from "@/common/Button";
+
 
 const About = () => {
+
+  
   return (
     <div  className="w-full px-2 flex items-center py-16 md:py-24 bg-backGrey">
       <div className="max-w-[1240px] px-5 m-auto md:grid grid-cols-3 gap-16">
@@ -53,13 +57,7 @@ const About = () => {
               />
               
             </div>
-            <div className="flex items-center justify-center py-2">
-              <div
-                className={`-mt-6 flex rounded-full shadow-xl shadow-shodowGrey400 p-3 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain bg-white`}
-              >
-                <p className="font-bold px-2 text-bluePort ">DESCARGAR CV</p>
-              </div>
-            </div>
+            <Button/>
           </div>
         </div>
         
