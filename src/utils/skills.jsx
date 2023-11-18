@@ -12,6 +12,10 @@ const dataSkills = [
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
     },
     {
+      name: "Vue.js",
+      image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
+    },
+    {
       name: "Redux",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
     },
@@ -95,7 +99,7 @@ const dataSkills = [
     {
       name: "Docker",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-plain.svg",
-    }
+    },
   ];
   
   module.exports = dataSkills
