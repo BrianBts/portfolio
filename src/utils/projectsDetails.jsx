@@ -20,6 +20,11 @@ const projectsDetails = [
     description: "Descripción del Proyecto 2.",
     image: "/behance.jpg", 
   },
+  {
+    title: "Proyecto 2",
+    description: "Descripción del Proyecto 2.",
+    image: "/rincon-matero.jpg", 
+  },
 
 ];
 
