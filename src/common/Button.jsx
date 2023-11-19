@@ -50,10 +50,9 @@ export default function Button() {
       <div className="relative -mt-6 group">
         <button
           onClick={handleDropdownToggle}
-          className="flex rounded-full shadow-xl p-3 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-secondary hover:text-buttonTextMain bg-white"
+          className="flex rounded-full shadow-xl p-3 cursor-pointer hover:scale-110 ease-in duration-300  hover:text-buttonTextMain bg-white"
         >
           <p className="font-bold px-2 text-bluePort">DESCARGAR CV</p>
-
         </button>
         {dropdownOpen && <Dropdown onSelect={handleDownload} />}
       </div>
