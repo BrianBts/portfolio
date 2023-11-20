@@ -13,7 +13,7 @@ const Navbar = () => {
   return (
     <nav className="bg-transparent">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="" className="flex items-center">
           <Image src={logo} alt="logo" width={60} height={60} />
         </a>
         <button
@@ -24,7 +24,7 @@ const Navbar = () => {
           aria-expanded={menuOpen}
         >
           <span className="sr-only">Open main menu</span>
-          <Burger/>
+          <Burger />
         </button>
         <div
           className={`${
@@ -35,7 +35,12 @@ const Navbar = () => {
           <ul className="font-medium ml-40 flex flex-col p-4 md:p-0 mt-4 md:shadow-none shadow-md border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
             <li>
               <a
-                href="#"
+                href="#about"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const aboutSection = document.getElementById("about");
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 pl-3 md:py-4 md:px-4 pr-4 text-backGrey font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-redePort md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 aria-current="page"
               >
@@ -44,7 +49,26 @@ const Navbar = () => {
             </li>
             <li>
               <a
-                href="#"
+                href="#skills"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const aboutSection = document.getElementById("skills");
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="block py-2 pl-3 md:py-4 md:px-4 pr-4 text-backGrey font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-redePort md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                aria-current="page"
+              >
+                HABILIDADES
+              </a>
+            </li>
+            <li>
+              <a
+                href="#projects"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const aboutSection = document.getElementById("projects");
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }}
                 className="block py-2 pl-3 md:py-4 md:px-4  text-backGrey font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-redePort md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 PROYECTOS
@@ -52,12 +76,16 @@ const Navbar = () => {
             </li>
             <li className="relative">
               <a
-                href="#"
-                className="block py-2 pl-3 md:py-4 md:px-4  text-backGrey font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                href="#contact"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const aboutSection = document.getElementById("contact");
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }}
+                className="block py-2 pl-3 md:py-4 md:px-4  text-redePort font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-800 md:p-0 md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 CONTACTO
               </a>
-              
             </li>
           </ul>
         </div>

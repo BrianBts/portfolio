@@ -64,7 +64,13 @@ export default function Start() {
             className="flex justify-center pt-32 md:pt-24"
             animate={controls}
           >
-            <Arrow />
+            <button onClick={(e) => {
+                  e.preventDefault();
+                  const aboutSection = document.getElementById("about");
+                  aboutSection.scrollIntoView({ behavior: "smooth" });
+                }}>
+              <Arrow  />
+            </button>
           </motion.div>
         )}
       </div>
