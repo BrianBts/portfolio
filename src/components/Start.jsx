@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import bigLogo from "/public/encabezado-tipografico-ps.jpg";
+import bigLogo from "/public/encabezado-tipografico.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { Arrow } from "@/common/icons";
