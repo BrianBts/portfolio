@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
-    <div id="skills" className="w-full px-2 py-16 md:py-24">
+    <div id="projects" className="w-full px-2 py-16 md:py-24">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
         <p className="uppercase text-xl tracking-widest  font-bold mb-6 text-bluePort">
           PROYECTOS
@@ -28,6 +28,9 @@ const Projects = () => {
                 title={project.title}
                 image={project.image}
                 description={project.description}
+                tech={project.tech}
+                client={project.client}
+                api={project.api}
               />
             </motion.div>
           ))}

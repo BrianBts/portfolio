@@ -6,7 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-transparent">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" className="flex items-center">
+        <a href="" className="flex items-center">
           <Image src={logo} alt="logo" width={60} height={60} />
         </a>
         <p className="text-gray-600">© 2023 Braian Barrientos. All rights reserved</p>

@@ -9,6 +9,7 @@ const About = () => {
     <div className="w-full px-2 flex items-center py-16 md:py-24 bg-backGrey">
       <div className="max-w-[1240px] px-5 m-auto md:grid grid-cols-3 gap-16">
         <div
+          id="about"
           data-aos="zoom-in"
           className="flex flex-col justify-center col-span-2"
         >
@@ -24,8 +25,8 @@ const About = () => {
             entorno diferente.
           </p>
           <p className="py-2 text-gray600 text-lg">
-            Actualmente me encuentro en la búsqueda de un entorno laboral donde pueda
-            crecer personal y profesionalmente, cuento con hards skills
+            Actualmente me encuentro en la búsqueda de un entorno laboral donde
+            pueda crecer personal y profesionalmente, cuento con hards skills
             populares en el mercado IT pero también softs skills necesarias para
             aportar mi granito de arena en cada proyecto.
           </p>
