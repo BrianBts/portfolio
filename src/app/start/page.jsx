@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import logo from "/public/optimized_encabezado-tipografico.png";
+import logo from "/public/encabezado-y-tipografia.png";
 import { useRouter } from "next/navigation";
 
 const Page = () => {
