@@ -15,20 +15,23 @@ const About = () => {
         >
           <p className="uppercase text-3xl font-bold text-redePort">Sobre Mí</p>
           <p className="py-2 text-gray600 text-lg">
-            👋 ¡Hola, te cuento un poco de mí! Soy un apasionado por el diseño,
-            el arte, la ilustración y la tecnología, mi búsqueda constante es la
-            chispa de creatividad en cada proyecto.🎨 Mi paso por el diseño
-            gráfico despertó mi deseo llevar mi creatividad más allá, a lo que
-            me llevó a sumergirme y finalizar un Bootcamp de programación con
-            más de 1000 horas de práctica técnica/teórica donde amplié mis
-            skills en diversas tecnologías para poder transmitir mis ideas en un
-            entorno diferente.
+            👋 Soy un apasionado del <strong className="text-light-blue-400">diseño</strong>, el{" "}
+            <strong className="text-light-blue-400">arte</strong>, la <strong className="text-light-blue-400">ilustración</strong> y la{" "}
+            <strong className="text-light-blue-400">tecnología</strong>. Mi búsqueda constante es la chispa de{" "}
+            <strong className="text-light-blue-400">creatividad</strong> en cada proyecto. Mi paso por el{" "}
+            <strong className="text-light-blue-400">diseño gráfico</strong> despertó mi deseo de llevar mi
+            creatividad más allá, lo que me llevó a sumergirme y completar un{" "}
+            <strong className="text-light-blue-400">Bootcamp de programación</strong> con más de 1000 horas de
+            práctica técnica/teórica. Durante este tiempo, amplié mis
+            habilidades en diversas tecnologías para poder transmitir mis ideas
+            en un entorno diferente.
           </p>
           <p className="py-2 text-gray600 text-lg">
-            Actualmente me encuentro en la búsqueda de un entorno laboral donde
-            pueda crecer personal y profesionalmente, cuento con hards skills
-            populares en el mercado IT pero también softs skills necesarias para
-            aportar mi granito de arena en cada proyecto.
+            Actualmente, me encuentro en la búsqueda de un entorno laboral donde
+            pueda crecer <strong className="text-light-blue-400">personal y profesionalmente</strong>. Cuento
+            con <strong className="text-light-blue-400">habilidades técnicas</strong> populares en el mercado
+            IT, así como <strong className="text-light-blue-400">habilidades blandas</strong> necesarias para aportar mi
+            granito de arena en cada proyecto.
           </p>
           <div className="flex justify-center mt-10">
             <a
