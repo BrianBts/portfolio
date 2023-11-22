@@ -56,7 +56,7 @@ const MyModal = ({
                 <p>{content}</p>
                 <div className="flex flex-wrap gap-2 py-3 justify-center">
                   {techArray.map((technology, index) => (
-                    <Chip color="warning" variant="bordered">
+                    <Chip color="warning" variant="bordered" key={index}>
                       {technology}
                     </Chip>
                   ))}
