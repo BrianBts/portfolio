@@ -31,7 +31,7 @@ export default function Start() {
   }, [showArrow, controls]);
 
   return (
-    <div className="flex items-center justify-center pt-[50%] sm:pt-28">
+    <div className="flex items-center justify-center pt-[50%] sm:pt-[11%]" id="#home">
       <div className="text-center h-[80vh]">
         <motion.div
           className="box"

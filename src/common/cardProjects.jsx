@@ -2,9 +2,11 @@ import React, { useState } from "react";
 import { Image, Spinner } from "@nextui-org/react";
 import MyModal from "@/utils/Modal";
 
-export default function CardProjects({ image, title, description, tech, api, client }) {
+export default function CardProjects({ image, title, description, tech, api, client, behance }) {
   const [modalOpen, setModalOpen] = useState(false);
   const [imageLoaded, setImageLoaded] = useState(false);
+
+ 
 
   const handleOpenModal = () => {
     setModalOpen(true);
@@ -47,6 +49,7 @@ export default function CardProjects({ image, title, description, tech, api, cli
         tech={tech}
         client={client}
         api={api}
+        behance={behance}
       />
     </>
   );
