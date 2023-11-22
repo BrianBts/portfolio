@@ -6,6 +6,7 @@ import {
   Button,
   ModalHeader,
   ModalBody,
+  Chip,
 } from "@nextui-org/react";
 import Image from "next/image";
 
@@ -19,6 +20,7 @@ const MyModal = ({
   tech,
   api,
   client,
+  behance,
 }) => {
   const handleClientClick = () => {
     if (client) {
@@ -34,6 +36,15 @@ const MyModal = ({
     onClose();
   };
 
+  const handleBehance = () => {
+    if (behance) {
+      window.open(behance, "_blank");
+    }
+    onClose();
+  };
+
+  const techArray = tech.split(" + ");
+
   return (
     <Modal isOpen={isOpen} onClose={onClose} backdrop={backdrop}>
       <ModalContent>
@@ -43,7 +54,13 @@ const MyModal = ({
             <ModalBody>
               <div className="flex justify-center items-center flex-col">
                 <p>{content}</p>
-                <p className="font-bold pt-4 text-light-blue-500">{tech}</p>
+                <div className="flex flex-wrap gap-2 py-3 justify-center">
+                  {techArray.map((technology, index) => (
+                    <Chip color="warning" variant="bordered">
+                      {technology}
+                    </Chip>
+                  ))}
+                </div>
                 <div className="rounded-lg mt-5 overflow-hidden">
                   <Image
                     src={image}
@@ -56,6 +73,11 @@ const MyModal = ({
               </div>
             </ModalBody>
             <ModalFooter>
+            {behance && (
+                <Button color="primary" onPress={handleBehance}>
+                  Perfil
+                </Button>
+              )} 
               {client && (
                 <Button color="primary" onPress={handleClientClick}>
                   Client

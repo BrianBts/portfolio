@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-transparent">
+    <nav className=" bg-backgroundColor shadow-sm fixed w-full z-40">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="" className="flex items-center">
           <Image src={logo} alt="logo" width={60} height={60} />
@@ -29,10 +29,10 @@ const Navbar = () => {
         <div
           className={`${
             menuOpen ? "block" : "hidden"
-          } w-full md:block  md:w-auto absolute   mt-52 flex justify-center md:mt-0 md:relative  md:items-center md:justify-between md:space-x-12 md:space-y-0  `}
+          } w-full md:block md:w-auto absolute mt-52 flex justify-center md:mt-0 md:relative md:items-center md:justify-between md:space-x-12 md:space-y-0`}
           id="navbar-default"
         >
-          <ul className="font-medium ml-40 flex flex-col p-4 md:p-0 mt-4 md:shadow-none shadow-md border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0">
+          <ul className="font-medium ml-40 flex flex-col p-4 md:p-0 mt-4 md:shadow-none shadow-md border-gray-100 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-backgroundColor md:w-auto">
             <li>
               <a
                 href="#about"
