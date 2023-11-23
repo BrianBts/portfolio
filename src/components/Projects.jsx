@@ -15,9 +15,9 @@ const Projects = () => {
   });
 
   return (
-    <div className="dark:bg-backGrey">
-      <div id="skills" className="bg-backGrey md:mr-10 md:rounded-r-2xl  ">
-        <div id="projects" className={`w-full px-2 py-16 md:py-24  `}>
+    <div id="projects" className="dark:bg-backGrey">
+      <div  className="bg-backGrey md:mr-10 md:rounded-r-2xl  ">
+        <div className={`w-full px-2 py-16 md:py-24  `}>
           <div
             className={`max-w-[1240px] mx-auto flex flex-col justify-center h-full `}
           >
@@ -37,7 +37,7 @@ const Projects = () => {
                     ease: [0, 0.71, 0.2, 1.01],
                   }}
                 >
-                  <div className=" space-x-4">
+                  <div >
                     <CardProjects
                       title={project.title}
                       image={project.image}
@@ -50,7 +50,7 @@ const Projects = () => {
                     />
 
                     {project.estado && (
-                      <div className=" pt-5 space-y-2 grid grid-cols-1">
+                      <div className="pt-3 space-y-2 grid grid-cols-1 ml-0">
                         <Chip color="success" size="sm" variant="bordered">
                           {project.estado}
                         </Chip>
