@@ -20,7 +20,7 @@ const About = () => {
               <p className="uppercase text-3xl font-bold text-redePort dark:text-light-blue-400 ">
                 Sobre Mí
               </p>
-              <p className="py-2 text-lg dark:text-backgroundColor dark:font-medium">
+              <p className="py-2 text-lg text-white dark:text-backgroundColor dark:font-medium">
                 👋 Soy un apasionado del{" "}
                 <strong className="text-light-blue-400">diseño</strong>, el{" "}
                 <strong className="text-light-blue-400">arte</strong>, la{" "}
@@ -39,7 +39,7 @@ const About = () => {
                 tiempo, amplié mis habilidades en diversas tecnologías para
                 poder transmitir mis ideas en un entorno diferente.
               </p>
-              <p className="py-2 text-lg dark:text-backgroundColor dark:font-medium">
+              <p className="py-2 text-lg text-white dark:text-backgroundColor dark:font-medium">
                 Actualmente, me encuentro en la búsqueda de un entorno laboral
                 donde pueda crecer{" "}
                 <strong className="text-light-blue-400">
