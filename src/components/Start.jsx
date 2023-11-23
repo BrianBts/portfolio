@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from "react";
 import bigLogo from "/public/encabezado-tipografico.png";
+import bigLogoDark from "/public/encabezado-tipografico-img-dark.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { Arrow } from "@/common/icons";
+import { useTheme } from "next-themes";
 
 export default function Start() {
   const [showArrow, setShowArrow] = useState(false);
@@ -30,8 +32,21 @@ export default function Start() {
     }
   }, [showArrow, controls]);
 
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+  const currentTheme = theme === "system" ? systemTheme : theme;
+
   return (
-    <div className="flex items-center justify-center pt-[50%] sm:pt-[11%]" id="#home">
+    <div
+      className="flex items-center justify-center pt-[50%] sm:pt-[11%] dark:bg-backGrey"
+      id="#home"
+    >
       <div className="text-center h-[80vh]">
         <motion.div
           className="box"
@@ -48,15 +63,24 @@ export default function Start() {
             },
           }}
         >
-          <Image
-            src={bigLogo}
-            alt="logoImage"
-            width={1100}
-            className="mb-4 sm:mb-0"
-          />
+          {currentTheme === "dark" ? (
+            <Image
+              src={bigLogoDark}
+              alt="logoImage"
+              width={1100}
+              className="mb-4 sm:mb-0"
+            />
+          ) : (
+            <Image
+              src={bigLogo}
+              alt="logoImage"
+              width={1100}
+              className="mb-4 sm:mb-0"
+            />
+          )}
           <div className="text-[15px] pl-24 mt-[-38px] sm:flex sm:text-3xl sm:mt-[-50px] sm:pl-36 font-montserrat font-bold">
             <p className="text-redePort mx-3">DESARROLLADOR FRONT-END.</p>
-            <p className="text-bluePort mx-3">DISEÑADOR GRÁFICO.</p>
+            <p className="text-bluePort mx-3 dark:text-light-blue-400">DISEÑADOR GRÁFICO.</p>
           </div>
         </motion.div>
         {showArrow && (
@@ -64,12 +88,14 @@ export default function Start() {
             className="flex justify-center pt-32 md:pt-24"
             animate={controls}
           >
-            <button onClick={(e) => {
-                  e.preventDefault();
-                  const aboutSection = document.getElementById("about");
-                  aboutSection.scrollIntoView({ behavior: "smooth" });
-                }}>
-              <Arrow  />
+            <button
+              onClick={(e) => {
+                e.preventDefault();
+                const aboutSection = document.getElementById("about");
+                aboutSection.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              <Arrow className={" stroke-backGrey dark:stroke-white"} />
             </button>
           </motion.div>
         )}
