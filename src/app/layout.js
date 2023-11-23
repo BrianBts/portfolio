@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
     <html lang="en" className="dark">
       <body className={inter.className}>
         <Providers>
-          <ThemeProvider enableSystem={true} attribute="class">
+          <ThemeProvider defaultTheme="light" enableSystem={true} attribute="class">
             {children}{" "}
           </ThemeProvider>
         </Providers>
