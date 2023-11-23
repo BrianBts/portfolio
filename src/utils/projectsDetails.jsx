@@ -1,3 +1,4 @@
+
 const projectsDetails = [
   {
     title: "First Plug Argentina",
@@ -7,6 +8,8 @@ const projectsDetails = [
     tech: "Express + MongoDB + Mongoose + NextJs + Tailwind + MST (Mobx State Tree) + Typescript",
     client: "https://github.com/sebikap-gm2/First-Plug-Platform-Client",
     api: "https://github.com/sebikap-gm2/First-Plug-Platform-Api",
+    estado: "Desarrollando actualmente"
+
   },
   {
     title: "BOX",
@@ -16,6 +19,8 @@ const projectsDetails = [
     tech: "Express + MongoDB + Mongoose + NextJs + Tailwind + MST (Mobx State Tree) + Typescript + Firebase + AWS + JWT",
     client: "https://github.com/BrianBts/box-client",
     api: "https://github.com/Francisco-Villanueva/box-api",
+    estado: "Desarrollando actualmente"
+
   },
   {
     title: "The movie Database",
