@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 
 const Page = () => {
   return (
-    <div className="relative bg-backgroundColor">
+    <div className="relative bg-backgroundColor dark:bg-backGrey">
       <Navbar />
       <Start />
       <About />

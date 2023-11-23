@@ -5,11 +5,13 @@ import CardProjects from "../common/cardProjects";
 import { motion } from "framer-motion";
 
 const Projects = () => {
+
+  
   return (
-    <>
-      <div id="skills" className="bg-backGrey md:mr-10 md:rounded-r-2xl ">
-        <div id="projects" className="w-full px-2 py-16 md:py-24 ">
-          <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+    < div className="dark:bg-backGrey">
+      <div id="skills" className="bg-backGrey md:mr-10 md:rounded-r-2xl  ">
+        <div id="projects" className={`w-full px-2 py-16 md:py-24  `}>
+          <div className={`max-w-[1240px] mx-auto flex flex-col justify-center h-full `} >
             <p className="uppercase text-xl tracking-widest  font-bold mb-6 text-redePort">
               PROYECTOS
             </p>
@@ -41,7 +43,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

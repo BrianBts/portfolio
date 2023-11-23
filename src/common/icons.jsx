@@ -1,37 +1,27 @@
-export function Behance() {
-  const svgStyle = {
-    fill: "rgba(255, 255, 255, 1)",
-    transform: "",
-    msFilter: "",
-  };
-
+export function Behance({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="35"
       viewBox="0 0 24 24"
-      style={svgStyle}
+      fill="currentColor"
+      className={className}
     >
       <path d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.280.871.280 1.443 0 .620-.140 1.138-.421 1.551-.283.414-.700.753-1.256 1.015.757.219 1.318.602 1.690 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.640 6.287 6.287 0 0 1-1.609.206H2V5.731h5.803zm-.351 4.972c.480 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742zm.151 5.239c.267 0 .521-.023.760-.077.241-.052.455-.136.637-.261.182-.120.332-.283.440-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.270-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.570-.515.653-.790h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.580.693-.702 0-1.334-.113-1.900-.337a4.033 4.033 0 0 1-1.439-.958a4.37 4.37 0 0 1-.905-1.485a5.433 5.433 0 0 1-.320-1.899c0-.666.111-1.289.329-1.864a4.376 4.376 0 0 1 .934-1.493c.405-.420.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.440a3.967 3.967 0 0 1 1.390 1.182c.363.493.622 1.058.783 1.691c.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729zm2.812-4.681c-.291-.322-.783-.496-1.385-.496c-.391 0-.714.065-.974.199a1.97 1.97 0 0 0-.620.491a1.772 1.772 0 0 0-.328.628a2.82 2.82 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409zm-3.918-4.663h4.989v1.215h-4.989z"></path>
     </svg>
   );
 }
 
-export function Github() {
-  const svgStyle = {
-    fill: "rgba(255, 255, 255, 1)",
-    transform: "",
-    msFilter: "",
-  };
-
+export function Github({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="35"
       viewBox="0 0 24 24"
-      style={svgStyle}
+      fill="currentColor"
+      className={className}
     >
       <path
         fillRule="evenodd"
@@ -42,20 +32,15 @@ export function Github() {
   );
 }
 
-export function Linkedin() {
-  const svgStyle = {
-    fill: "rgba(255, 255, 255, 1)",
-    transform: "",
-    msFilter: "",
-  };
-
+export function Linkedin({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="35"
       viewBox="0 0 24 24"
-      style={svgStyle}
+      fill="currentColor"
+      className={className}
     >
       <circle cx="4.983" cy="5.009" r="2.188"></circle>
       <path d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z"></path>
@@ -63,20 +48,15 @@ export function Linkedin() {
   );
 }
 
-export function Instagram() {
-  const svgStyle = {
-    fill: "rgba(255, 255, 255, 1)",
-    transform: "",
-    msFilter: "",
-  };
-
+export function Instagram({ className }) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width="50"
       height="35"
       viewBox="0 0 24 24"
-      style={svgStyle}
+      fill="currentColor"
+      className={className}
     >
       <path d="M11.999 7.377a4.623 4.623 0 1 0 0 9.248 4.623 4.623 0 0 0 0-9.248zm0 7.627a3.004 3.004 0 1 1 0-6.008 3.004 3.004 0 0 1 0 6.008z"></path>
       <circle cx="16.806" cy="7.207" r="1.078"></circle>
@@ -104,22 +84,60 @@ export function Arrow({ className }) {
   );
 }
 
-
-export function Burger() {
+export function Burger({ className, stroke }) {
   return (
     <svg
-      className="w-5 h-5"
-      aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
-      viewBox="0 0 17 14"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="black"
+      class={`${className} w-6 h-6 `}
     >
       <path
-        stroke="#303031"
+        stroke={stroke}
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
         d="M1 1h15M1 7h15M1 13h15"
+      />
+    </svg>
+  );
+}
+
+export function Sun({ className, stroke }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z"
+      />
+    </svg>
+  );
+}
+
+export function Moon({ className, stroke }) {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke-width="1.5"
+      stroke="currentColor"
+      class="w-6 h-6"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
       />
     </svg>
   );

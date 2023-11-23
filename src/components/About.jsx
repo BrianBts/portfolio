@@ -5,19 +5,22 @@ import { Github, Behance, Linkedin, Instagram } from "../common/icons";
 import Button from "@/common/Button";
 
 const About = () => {
+
   return (
     <>
-      <div id="about">
-        <div className=" md:ml-10 flex items-center py-16 md:py-24 bg-backGrey md:rounded-l-2xl ">
+      <div id="about" className="dark:bg-backGrey ">
+        <div
+          className={` md:ml-10 flex items-center  py-16 md:py-24 bg-backGrey md:rounded-l-2xl `}
+        >
           <div className="max-w-[1240px] px-5 m-auto md:grid grid-cols-3 gap-16 ">
             <div
               data-aos="zoom-in"
-              className="flex flex-col justify-center col-span-2"
+              className="flex flex-col justify-center col-span-2 "
             >
-              <p className="uppercase text-3xl font-bold text-redePort">
+              <p className="uppercase text-3xl font-bold text-redePort dark:text-light-blue-400 ">
                 Sobre Mí
               </p>
-              <p className="py-2 text-lg">
+              <p className="py-2 text-lg dark:text-backgroundColor dark:font-medium">
                 👋 Soy un apasionado del{" "}
                 <strong className="text-light-blue-400">diseño</strong>, el{" "}
                 <strong className="text-light-blue-400">arte</strong>, la{" "}
@@ -36,7 +39,7 @@ const About = () => {
                 tiempo, amplié mis habilidades en diversas tecnologías para
                 poder transmitir mis ideas en un entorno diferente.
               </p>
-              <p className="py-2 text-lg">
+              <p className="py-2 text-lg dark:text-backgroundColor dark:font-medium">
                 Actualmente, me encuentro en la búsqueda de un entorno laboral
                 donde pueda crecer{" "}
                 <strong className="text-light-blue-400">
@@ -59,7 +62,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Github />
+                    <Github className="text-white " />
                   </a>
                 </button>
                 <button className="hover:-rotate-12 hover:scale-125 hover:transition-all">
@@ -68,7 +71,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Behance />
+                    <Behance className="text-white " />
                   </a>
                 </button>
                 <button className="hover:rotate-12 hover:scale-125 hover:transition-all">
@@ -77,7 +80,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Instagram />
+                    <Instagram className="text-white " />
                   </a>
                 </button>
                 <button className="hover:-rotate-12 hover:scale-125 hover:transition-all">
@@ -86,7 +89,7 @@ const About = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <Linkedin />
+                    <Linkedin className="text-white " />
                   </a>
                 </button>
               </div>

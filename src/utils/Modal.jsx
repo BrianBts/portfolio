@@ -50,9 +50,9 @@ const MyModal = ({
       <ModalContent>
         {(onClose) => (
           <>
-            <ModalHeader className="flex flex-col gap-1">{title}</ModalHeader>
+            <ModalHeader className="flex flex-col gap-1 text-bluePort dark:text-light-blue-400">{title}</ModalHeader>
             <ModalBody>
-              <div className="flex justify-center items-center flex-col">
+              <div className="flex justify-center items-center flex-col text-backGrey dark:text-white">
                 <p>{content}</p>
                 <div className="flex flex-wrap gap-2 py-3 justify-center">
                   {techArray.map((technology, index) => (
