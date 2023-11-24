@@ -1,10 +1,22 @@
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import imagePerfil from "/public/foto-Perfil.png";
+import imagePerfil2 from "/public/foto-Perfil-blue.png";
 import { Github, Behance, Linkedin, Instagram } from "../common/icons";
 import Button from "@/common/Button";
+import { useTheme } from "next-themes";
 
 const About = () => {
+
+  const { systemTheme, theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) return null;
+  const currentTheme = theme === "system" ? systemTheme : theme;
 
   return (
     <>
@@ -98,12 +110,24 @@ const About = () => {
             <div className="flex h-full items-center w-[80%] mx-auto md:w-full">
               <div className="mt-12 md:m-0 rounded-3xl ">
                 <div className="rounded-3xl rotate-0  hover:rotate-0 overflow-hidden">
+                  
+                {currentTheme === "dark" ? (
                   <Image
+                    className="rounded-2xl"
+                    src={imagePerfil2}
+                    alt="Foto de Perfil"
+                    width={360}
+                  />
+                  ) : (
+
+                    <Image
                     className="rounded-2xl"
                     src={imagePerfil}
                     alt="Foto de Perfil"
                     width={360}
                   />
+                  )}
+
                 </div>
                 <Button />
               </div>
