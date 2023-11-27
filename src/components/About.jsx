@@ -2,6 +2,8 @@ import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import imagePerfil from "/public/foto-Perfil.png";
 import imagePerfil2 from "/public/foto-Perfil-blue.png";
+import imagePerfil3 from "/public/optimizadas/foto1.png";
+import imagePerfil4 from "/public/optimizadas/foto2.png";
 import { Github, Behance, Linkedin, Instagram } from "../common/icons";
 import Button from "@/common/Button";
 import { useTheme } from "next-themes";
@@ -114,7 +116,7 @@ const About = () => {
                 {currentTheme === "dark" ? (
                   <Image
                     className="rounded-2xl"
-                    src={imagePerfil2}
+                    src={imagePerfil3}
                     alt="Foto de Perfil"
                     width={360}
                   />
@@ -122,7 +124,7 @@ const About = () => {
 
                     <Image
                     className="rounded-2xl"
-                    src={imagePerfil}
+                    src={imagePerfil4}
                     alt="Foto de Perfil"
                     width={360}
                   />

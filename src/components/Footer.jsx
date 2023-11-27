@@ -19,7 +19,7 @@ export default function Footer() {
   return (
     <footer className="bg-transparent dark:bg-backGrey">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="" className="flex items-center">
+        <a href="https://braianbarrientos.site/home" className="flex items-center">
         {currentTheme === "dark" ? (
             <Image src={logoWhite} alt="logo" width={60} height={60} />
           ) : (
