@@ -38,8 +38,8 @@ export default function Button() {
   const handleDownload = (language) => {
     const driveLink =
       language === "ingles"
-        ? "https://drive.google.com/file/d/1ZUHB0CpazJTdlBCT1KPW2Nca5QZgc_Fb/view?usp=sharing"
-        : "https://drive.google.com/file/d/1VzEDMGow7eyx9rBSxRwkKP3CJW16DxOO/view?usp=sharing";
+        ? "https://drive.google.com/file/d/1MTMnJJGqDj7b60VU9JyCaAmQyGzNCVUi/view?usp=sharing"
+        : "https://drive.google.com/file/d/1M2J3fxTMwmL8_Eb2D-VlF7nG7CCw9Par/view?usp=sharing";
 
     window.open(driveLink, "_blank");
     setDropdownOpen(false);
