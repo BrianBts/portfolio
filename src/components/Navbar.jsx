@@ -71,6 +71,20 @@ const Navbar = () => {
               </li>
               <li>
                 <a
+                  href="#exp"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const aboutSection = document.getElementById("exp");
+                    aboutSection.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  className="block py-2 pl-3 md:py-4 md:px-4 pr-4 text-backGrey dark:text-white font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-redePort md:p-0  md:dark:hover:text-redePort dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-current="page"
+                >
+                  EXPERIENCIA
+                </a>
+              </li>
+              <li>
+                <a
                   href="#skills"
                   onClick={(e) => {
                     e.preventDefault();

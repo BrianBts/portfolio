@@ -6,6 +6,9 @@ import React, { useState, useEffect } from "react";
 
 export default function Footer() {
 
+  const dateOne = new Date
+  const date = dateOne.getFullYear() 
+
   const { systemTheme, theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
@@ -26,7 +29,7 @@ export default function Footer() {
             <Image src={logo} alt="logo" width={60} height={60} />
           )}
         </a>
-        <p className="text-gray-600 dark:text-backgroundColor">© 2023 Braian Barrientos. All rights reserved</p>
+        <p className="text-gray-600 dark:text-backgroundColor">© {date} Braian Barrientos. All rights reserved</p>
       </div>
     </footer>
   );
