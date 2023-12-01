@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
-import bigLogo from "/public/encabezado-tipografico.png";
-import bigLogo2 from "/public/optiomizado.light.jpg";
-import bigLogoDark from "/public/encabezado-tipografico-img-dark.png";
-import bigLogoDark2 from "/public/optimizado.dark.png";
+import bigLogoDarkIlustrado from "/public/encabezado-tipografico-ilustrado2.png";
+import bigLogoDarkIlustrados from "/public/encabezado-tipografico-ilustrado-dark.png";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { Arrow } from "@/common/icons";
@@ -67,14 +65,14 @@ export default function Start() {
         >
           {currentTheme === "dark" ? (
             <Image
-              src={bigLogoDark2}
+              src={bigLogoDarkIlustrados}
               alt="logoImage"
               width={1100}
               className="mb-4 sm:mb-0"
             />
           ) : (
             <Image
-              src={bigLogo}
+              src={bigLogoDarkIlustrado}
               alt="logoImage"
               width={1100}
               className="mb-4 sm:mb-0"
