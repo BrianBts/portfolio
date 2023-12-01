@@ -5,15 +5,18 @@ import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { Arrow } from "@/common/icons";
 import { useTheme } from "next-themes";
+import { Spinner } from "@nextui-org/react"; 
 
 export default function Start() {
   const [showArrow, setShowArrow] = useState(false);
+  const [loading, setLoading] = useState(true); 
   const controls = useAnimation();
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowArrow(true);
-    }, 1500);
+      setLoading(false); 
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -48,41 +51,45 @@ export default function Start() {
       id="#home"
     >
       <div className="text-center h-[80vh]">
-        <motion.div
-          className="box"
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{
-            duration: 0.1,
-            ease: [0, 0.71, 0.2, 1.01],
-            scale: {
-              type: "spring",
-              damping: 7,
-              stiffness: 100,
-              restDelta: 0.001,
-            },
-          }}
-        >
-          {currentTheme === "dark" ? (
-            <Image
-              src={bigLogoDarkIlustrados}
-              alt="logoImage"
-              width={1100}
-              className="mb-4 sm:mb-0"
-            />
-          ) : (
-            <Image
-              src={bigLogoDarkIlustrado}
-              alt="logoImage"
-              width={1100}
-              className="mb-4 sm:mb-0"
-            />
-          )}
-          <div className="text-[15px] pl-24 mt-[-38px] sm:flex sm:text-3xl sm:mt-[-50px] sm:pl-36 font-montserrat font-bold">
-            <p className="text-redePort mx-3">DESARROLLADOR FRONT-END.</p>
-            <p className="text-bluePort mx-3 dark:text-light-blue-400">DISEÑADOR GRÁFICO.</p>
-          </div>
-        </motion.div>
+        {loading ? ( 
+          <Spinner color="primary" size="large" />
+        ) : (
+          <motion.div
+            className="box"
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+              duration: 0.1,
+              ease: [0, 0.71, 0.2, 1.01],
+              scale: {
+                type: "spring",
+                damping: 7,
+                stiffness: 100,
+                restDelta: 0.001,
+              },
+            }}
+          >
+            {currentTheme === "dark" ? (
+              <Image
+                src={bigLogoDarkIlustrados}
+                alt="logoImage"
+                width={1100}
+                className="mb-4 sm:mb-0"
+              />
+            ) : (
+              <Image
+                src={bigLogoDarkIlustrado}
+                alt="logoImage"
+                width={1100}
+                className="mb-4 sm:mb-0"
+              />
+            )}
+            <div className="text-[15px] pl-24 mt-[-38px] sm:flex sm:text-3xl sm:mt-[-50px] sm:pl-36 font-montserrat font-bold">
+              <p className="text-redePort mx-3">DESARROLLADOR FRONT-END.</p>
+              <p className="text-bluePort mx-3 dark:text-light-blue-400">DISEÑADOR GRÁFICO.</p>
+            </div>
+          </motion.div>
+        )}
         {showArrow && (
           <motion.div
             className="flex justify-center pt-32 md:pt-24"
