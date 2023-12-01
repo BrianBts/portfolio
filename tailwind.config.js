@@ -23,7 +23,7 @@ module.exports = withMT({
       },
       colors: {
         redePort: "#E62E1F",
-        bluePort: "#185CBC",
+        bluePort: "#307FE2",
         backgroundColor: "#FCFCF7",
         backGrey: "#303031",
       },

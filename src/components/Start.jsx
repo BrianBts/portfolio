@@ -74,7 +74,7 @@ export default function Start() {
             />
           ) : (
             <Image
-              src={bigLogo2}
+              src={bigLogo}
               alt="logoImage"
               width={1100}
               className="mb-4 sm:mb-0"
