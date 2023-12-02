@@ -52,7 +52,7 @@ const dataSkills = [
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
     },
     {
-      name: "Sequialize",
+      name: "Sequelize",
       image: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg",
     },
     {
