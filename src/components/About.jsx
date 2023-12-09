@@ -1,7 +1,5 @@
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
-import imagePerfil from "/public/foto-Perfil.png";
-import imagePerfil2 from "/public/foto-Perfil-blue.png";
 import imagePerfil3 from "/public/optimizadas/foto1.png";
 import imagePerfil4 from "/public/optimizadas/foto2.png";
 import { Github, Behance, Linkedin, Instagram } from "../common/icons";
@@ -70,38 +68,43 @@ const About = () => {
                 necesarias para aportar mi granito de arena en cada proyecto.
               </p>
               <div className="flex justify-center mt-10">
-                <button className="hover:rotate-12 hover:scale-125 hover:transition-all">
+                <button className="hover:rotate-12 hover:scale-125 hover:transition-all"  aria-label="social media icon">
                   <a
                     href="https://github.com/BrianBts"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="social media icon"
+                    
                   >
                     <Github className="text-white " />
                   </a>
                 </button>
-                <button className="hover:-rotate-12 hover:scale-125 hover:transition-all">
+                <button className="hover:-rotate-12 hover:scale-125 hover:transition-all"  aria-label="social media icon">
                   <a
                     href="https://www.behance.net/brianbts"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="social media icon"
                   >
                     <Behance className="text-white " />
                   </a>
                 </button>
-                <button className="hover:rotate-12 hover:scale-125 hover:transition-all">
+                <button className="hover:rotate-12 hover:scale-125 hover:transition-all"  aria-label="social media icon">
                   <a
                     href="https://www.instagram.com/brianbts_/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="social media icon"
                   >
                     <Instagram className="text-white " />
                   </a>
                 </button>
-                <button className="hover:-rotate-12 hover:scale-125 hover:transition-all">
+                <button className="hover:-rotate-12 hover:scale-125 hover:transition-all"  aria-label="social media icon">
                   <a
                     href="https://www.linkedin.com/in/braian-barrientos-49591112a/"
                     target="_blank"
                     rel="noopener noreferrer"
+                    aria-label="social media icon"
                   >
                     <Linkedin className="text-white " />
                   </a>

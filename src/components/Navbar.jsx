@@ -28,7 +28,7 @@ const Navbar = () => {
       <nav className=" bg-none dark:bg-none fixed w-full z-40 md:backdrop-filter md:backdrop-blur-md">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a
-            href=""
+            href="https://braianbarrientos.site/home"
             className="flex items-center md:shadow-none rounded-full bg-backgroundColor shadow-xl  dark:bg-backGrey"
           >
             {currentTheme === "dark" ? (
@@ -43,6 +43,7 @@ const Navbar = () => {
             className="  p-3 w-10 h-10 justify-center text-sm md:hidden dark:bg-backGrey bg-backgroundColor shadow-xl rounded-full"
             aria-controls="navbar-default"
             aria-expanded={menuOpen}
+            aria-label="open menu navigation"
           >
             
             <Burger className={"dark:stroke-white"} />

@@ -10,7 +10,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className="dark">
       <head>
-        <title>Braian Barrientos Portfolio</title>
+      <meta name="Braian Barrientos Portfolio" content="Desarrollador Front-End & Diseñador Gráfico" />
+
       </head>
       <body className={inter.className}>
         <Providers>

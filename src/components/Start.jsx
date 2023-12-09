@@ -16,7 +16,7 @@ export default function Start() {
     const timeoutId = setTimeout(() => {
       setShowArrow(true);
       setLoading(false); 
-    }, 1000);
+    }, 600);
 
     return () => clearTimeout(timeoutId);
   }, []);
@@ -52,7 +52,7 @@ export default function Start() {
     >
       <div className="text-center h-[80vh]">
         {loading ? ( 
-          <Spinner color="primary" size="large" />
+          <Spinner color="primary" size="large" className={"h-[50vh]"} />
         ) : (
           <motion.div
             className="box"
@@ -96,6 +96,7 @@ export default function Start() {
             animate={controls}
           >
             <button
+              aria-label="move to about"
               onClick={(e) => {
                 e.preventDefault();
                 const aboutSection = document.getElementById("about");
