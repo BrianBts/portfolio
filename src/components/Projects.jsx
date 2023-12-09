@@ -28,6 +28,7 @@ const Projects = () => {
               {projectsDetails.map((project, index) => (
                 <motion.div
                   key={index}
+                  rel="preload" as="image"
                   className="mb-8"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={{ opacity: 1, scale: 1 }}
@@ -47,6 +48,7 @@ const Projects = () => {
                       api={project.api}
                       behance={project.behance}
                       estado={project.estado}
+                      loading="lazy"
                     />
 
                     {project.estado && (

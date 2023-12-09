@@ -75,6 +75,7 @@ export default function Start() {
                 alt="logoImage"
                 width={1100}
                 className="mb-4 sm:mb-0"
+                loading="eager"
               />
             ) : (
               <Image
@@ -82,6 +83,7 @@ export default function Start() {
                 alt="logoImage"
                 width={1100}
                 className="mb-4 sm:mb-0"
+                loading="eager"
               />
             )}
             <div className="text-[15px] pl-24 mt-[-38px] sm:flex sm:text-3xl sm:mt-[-50px] sm:pl-36 font-montserrat font-bold">
