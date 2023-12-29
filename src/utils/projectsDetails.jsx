@@ -19,7 +19,7 @@ const projectsDetails = [
     tech: "Express + MongoDB + Mongoose + NextJs + Tailwind + MST (Mobx State Tree) + Typescript + Firebase + AWS + JWT",
     client: "https://github.com/BrianBts/box-client",
     api: "https://github.com/Francisco-Villanueva/box-api",
-    estado: "Desarrollando actualmente"
+    //estado: "Desarrollando actualmente"
 
   },
   {
