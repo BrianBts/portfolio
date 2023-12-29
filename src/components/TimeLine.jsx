@@ -12,6 +12,51 @@ export default function TimeLine() {
               <div className="bullet w-3 h-3 bg-gray-500 rounded-full absolute left-[-15px] top-1/2 transform -translate-y-1/2"></div>
 
               <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
+                Diciembre 2023 - Actualidad
+              </time>
+              <p class="text-lg font-semibold text-gray-900 dark:text-white">
+                Especialista en Implementación y Desarrollo de Software
+              </p>
+
+              <div className="py-2">
+                <Chip
+                  variant="shadow"
+                  classNames={{
+                    base: "bg-gradient-to-br from-blue-500 to-blue-300 border-small border-white/50 ",
+                    content: "drop-shadow shadow-black text-white",
+                  }}
+                >
+                  <p>Brio Team</p>
+                </Chip>
+              </div>
+              <p class="mb-4  text-[15px] md:text-base font-normal text-gray-500 dark:text-gray-400 ">
+                Como desarrollador Front-End, mi tarea principal es brindar
+                soporte integral y contribuir al crecimiento continuo de la
+                aplicación.
+                <br />
+                Mi enfoque se centra en la generación de nuevas funcionalidades,
+                así como en la resolución eficiente de bugs para garantizar una
+                experiencia del usuario óptima. 
+                Además, también formo parte del
+                proceso de <strong>implementación</strong>, asegurando una integración adecuada
+                entre las necesidades de nuestros clientes con las soluciones
+                proporcionadas por la empresa. 
+                <br />
+              </p>
+              <a
+                href="https://brio.team/"
+                target="_blank"
+                class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              >
+                Empresa
+                <ArrowInfo />
+              </a>
+            </li>
+
+            <li class="mb-10 ms-4 w-80 md:w-[50%]">
+              <div className="bullet w-3 h-3 bg-gray-500 rounded-full absolute left-[-15px] top-1/2 transform -translate-y-1/2"></div>
+
+              <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
                 Septiembre 2023 - Actualidad
               </time>
               <p class="text-lg font-semibold text-gray-900 dark:text-white">
@@ -38,11 +83,19 @@ export default function TimeLine() {
                   semanas.
                 </strong>
               </p>
+              <a
+                href="https://www.linkedin.com/company/first-plug/"
+                target="_blank"
+                class="inline-flex items-center px-4 py-2 mt-5 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700"
+              >
+                Empresa
+                <ArrowInfo />
+              </a>
             </li>
 
             <li class="mb-10 ms-4 w-80 md:w-[50%]">
               <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">
-                Noviembre 2023 - Actualidad
+                Octubre 2023 - Diciembre 2023
               </time>
               <p class="text-lg font-semibold text-gray-900 dark:text-white">
                 Desarrollador Full Stack
